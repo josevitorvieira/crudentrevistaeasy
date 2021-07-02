@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const startApi = require('./index');
+const startApi = require('./index');  
 
 mongoose.connect('mongodb+srv://vitorvieira:160223@estudo0.kvsl2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',  {useNewUrlParser: true, useUnifiedTopology: true});
 
