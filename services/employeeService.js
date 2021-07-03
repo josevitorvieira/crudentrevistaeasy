@@ -20,7 +20,8 @@ const recoveryAllEmployees = async()=>{
 
 const recoveryEmployee = async(idEmployee)=>{
     const response = await employeeManager.readOne({ id:idEmployee });
-    return response;
+    if(!response) return { status:400, message:"Funcionario não cadastrado" };
+    return { status:200, message:response};
 }
 
 const updateEmployee = async(idEmployee, body)=>{
