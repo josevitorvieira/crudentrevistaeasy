@@ -20,7 +20,7 @@ router.get(nameRoute, async(req,res)=>{
 router.get(nameRoute + '/:id', async(req,res)=>{
     const { id } = req.params;
     const response = await employeeService.recoveryEmployee(id);
-    return res.status(200).json(response);
+    return res.status(response.status).json(response.message);
 })
 
 router.put(nameRoute + '/:id', async(req,res)=>{
