@@ -14,7 +14,7 @@
     "Empresa"
   ],
   "engines": {
-    "node": "14.15.4"
+    "node": "14.17.1"
   },
   "author": "José Vitor Martins dos Santos Vieira",
   "license": "ISC",
