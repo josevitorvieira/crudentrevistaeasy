@@ -19,6 +19,7 @@
   "author": "José Vitor Martins dos Santos Vieira",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "cpf-cnpj-validator": "^1.0.3",
     "express": "^4.17.1",
     "mongoose": "^5.13.0",
