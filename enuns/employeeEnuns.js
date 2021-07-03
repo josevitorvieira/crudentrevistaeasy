@@ -31,6 +31,7 @@ const verifyEmptyFields = (employee)=>{
     
     const address = employee.address;
 
+    if(!employee.cpf) return {error:'Por favor digite seu CPF corretamente!!!'}
     if(!address?.street) return {error:'Por favor digite o nome completo da sua rua!!!'}
     if(!address?.district) return {error:'Por favor digite o nome completo do seu bairro!!!'}
     if(!address?.city) return {error:'Por favor digite o nome completo da sua cidade!!!'}
